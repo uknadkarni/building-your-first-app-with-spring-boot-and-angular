@@ -23,7 +23,7 @@ public class BikeController {
     }
 
     @GetMapping("/bikes")
-    @ResponseStatus(HttpStatus.FOUND)
+    @ResponseStatus(HttpStatus.OK)
     public Collection<Bike> getAll() {
         return bikeRepository.findAll();
     }
